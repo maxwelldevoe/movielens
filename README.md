@@ -38,3 +38,10 @@ To execute the data load cli command:
 
 Code changes should trigger live reload of the docker services in the docker
 containers by way of the volume binds specified in the compose file.
+
+
+To test Max's Code:
+1. run docker-compose exec backend flask load-db 
+2. start up the fullstack container (docker-compose up backend site)
+3. navigate to localhost:8090
+4. search for movies
