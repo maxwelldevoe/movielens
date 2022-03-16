@@ -25,14 +25,3 @@ CREATE TABLE tags (
     tag varchar(225),
     tag_time varchar(50)
 );
-
-SELECT movies.movie_id, 
-movies.movie_title, 
-movies.movie_genres,
-GROUP_CONCAT(DISTINCT tags.tag) tags 
-FROM movies
-JOIN links ON movies.movie_id = links.movie_id
-JOIN ratings ON movies.movie_id = ratings.movie_id
-JOIN tags ON movies.movie_id = tags.movie_id
-WHERE movies.movie_title LIKE '%jumanji%' LIMIT 50, 1
-GROUP_CONCAT(DISTINCT ratings.rating) ratings

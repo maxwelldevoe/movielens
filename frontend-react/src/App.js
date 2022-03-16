@@ -56,7 +56,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    console.log(showMovies)
     if(showMovies) {
       console.log(movies)
       movies.map((movie) => {
