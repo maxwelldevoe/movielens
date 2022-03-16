@@ -1,0 +1,11 @@
+body {
+  margin: 100;
+  padding: 100;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+pre {
+  padding: 1em;
+  background-color: #ccc;
+}
